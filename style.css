@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Epilogue&family=Hanken+Grotesk:wght@200&family=Inter:wght@200&family=Josefin+Sans:wght@200;300&family=Kumbh+Sans:wght@300&family=Libre+Franklin:wght@200&family=Manrope:wght@200&family=Outfit:wght@200&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200&family=Red+Hat+Display&display=swap");
+
+:root {
+  --Very-dark-blue-main-background: hsl(233, 47%, 7%);
+
+  --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+
+  --Soft-violet-accent: hsl(277, 64%, 61%);
+
+  --White-main-heading-stats: hsl(0, 0%, 100%);
+
+  --Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+
+  --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-dark-blue-main-background);
+}
+.container{
+  background-color: var(--Dark-desaturated-blue-card-background);
+  color:var(--White-main-heading-stats) ;
+  width: 375px;
+  height: 600px;
+}
+.description{
+  color: var(--Slightly-transparent-white-main-paragraph);
+  white-space: pre-line;
+}
+
+.info{
+  font-size: .8rem;
+  font-weight: 900;
+  color: var(--Slightly-transparent-white-stat-headings);
+}
+
+@media (min-width:1024px){
+  .container{
+    height: 525px;
+  }
+  .left_side img{
+    width:60rem
+  }
+}
